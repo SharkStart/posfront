@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="textin">Registrarte</div>
+    </header>
+
+    <div class="login-container">
+        <form id="register-form">
+            <div class="input-group">
+                <label for="name">Ingresa tu nombre completo</label>
+                <input type="text" id="name" placeholder="Nombre completo" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Ingresa tu correo</label>
+                <input type="email" id="email" placeholder="correo@ejemplo.com" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Ingresa tu contraseña</label>
+                <div class="password-container">
+                    <input type="password" id="password" placeholder="Contraseña" required>
+                    <button type="button" id="toggle-password" class="toggle-password">
+                        <img src="/assets/icons/eye.png" class="icons" alt="Mostrar contraseña">
+                    </button>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="confirm-password">Confirma tu contraseña</label>
+                <div class="password-container">
+                    <input type="password" id="confirm-password" placeholder="Confirmar contraseña" required>
+                    <button type="button" id="toggle-confirm-password" class="toggle-password">
+                        <img src="/assets/icons/eye.png" class="icons" alt="Mostrar contraseña">
+                    </button>
+                </div>
+                <br>
+            </div>
+            <button type="submit" class="login-button">Registrarse</button>
+        </form>
+        <br>
+        <br>
+        <p class="login-text">¿Ya tienes una cuenta? <a href="inicio.html">Iniciar sesión</a></p>
+    </div>
+    <script src="../public/js/handleAuth.js" ></script>
+    <script src="../public/js/togglePassword.js" ></script>
+
+
+</body>
+</html>
